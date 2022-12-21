@@ -6,14 +6,14 @@
 
             
 
-            @foreach ($blogs as $blog)
-            @dd($blogs)
+           
+         
         
             
-           
-            <div class="lg:grid lg:grid-cols-3 d-flex">
+            @foreach ($blogs as $blog)
+            <div class="lg:grid lg:grid-cols-3 flex">
                
-                <article class="transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
+                <article class="transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl flex">
                     
                     <div class="py-6 px-5">
                        
@@ -31,7 +31,7 @@
                                        class="px-3 py-1 border border-red-300 rounded-full text-red-300 text-xs uppercase font-semibold"
                                        style="font-size: 10px">Updates</a>
                                 </div>
-
+                                
                                 <div class="mt-4">
                                     <h1 class="text-3xl">
                                         {{$blog->title}}

@@ -2,6 +2,7 @@
 
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 use Illuminate\Support\Facades\File;
 
@@ -37,4 +38,4 @@ Route::get('/', function () {
 // })->where('post', '[A-z_\-]+'); //regular expression
 
 
-Route::get('index', 'BlogsController@index');
+Route::get('/', 'App\Http\Controllers\BlogsController@index');

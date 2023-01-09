@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string('title');
             $table->string('excerpt');
             $table->text('description');
+            $table->string('slug');
             $table->date('date');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

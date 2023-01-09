@@ -42,7 +42,7 @@ class Post
     }
     public function scopeIdDescending($posts)
     {
-        return $posts->orderBy('id', 'DESC');
+        return $bl->orderBy('id', 'DESC');
     }
     public static function find($slug)
     {
